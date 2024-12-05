@@ -1,5 +1,5 @@
 {% set name = "atproto" %}
-{% set version = "0.0.55" %}
+{% set version = "0.0.56" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/atproto-{{ version }}.tar.gz
-  sha256: 8074181cb4647e56476c05ab36e20ff599a00366d34094a76ccc77e46498d7dd
+  sha256: 8f273dad6bf27e878ca98d58c41c85a0da275eb17f23a394057edee8220c6776
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - atproto = atproto_cli:atproto_cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
