@@ -1,5 +1,5 @@
 {% set name = "atproto" %}
-{% set version = "0.0.56" %}
+{% set version = "0.0.57" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/atproto-{{ version }}.tar.gz
-  sha256: 8f273dad6bf27e878ca98d58c41c85a0da275eb17f23a394057edee8220c6776
+  sha256: 3a88c19310dcd452e5fd3138d2d54f728acbd58f09b1ebc757f4f268e76bbaa1
 
 build:
   entry_points:
