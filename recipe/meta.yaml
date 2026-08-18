@@ -1,13 +1,13 @@
 {% set name = "atproto" %}
-{% set version = "0.0.69" %}
+{% set version = "0.0.70" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/atproto-{{ version }}.tar.gz
-  sha256: 3b42d495f95a5e8dbfc6abec4308552b07d8f73da96536fff1c7b2fcc5befe0d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/atproto-{{ version }}.tar.gz
+  sha256: e56de53fe3e58dd5f6d839b485884fdcdb51576cc445a410293963bcb0242d97
 
 build:
   entry_points:
@@ -28,11 +28,12 @@ requirements:
     - httpx >=0.25.0,<0.29.0
     - typing_extensions >=4.8.0,<5
     - click >=8.1.3,<9
-    - websockets >=15,<16
+    - websockets >=15,<18
     - pydantic >=2.7,<3
     - libipld >=3.0.1,<4
     - dnspython >=2.4.0,<3
-    - cryptography >=41.0.7,<46
+    - cryptography >=41.0.7,<51
+    - zstandard >=0.24.0,<0.26.0
 
 test:
   imports:
