@@ -28,11 +28,12 @@ requirements:
     - httpx >=0.25.0,<0.29.0
     - typing_extensions >=4.8.0,<5
     - click >=8.1.3,<9
-    - websockets >=15,<16
+    - websockets >=15,<18
     - pydantic >=2.7,<3
     - libipld >=3.0.1,<4
     - dnspython >=2.4.0,<3
-    - cryptography >=41.0.7,<46
+    - cryptography >=41.0.7,<51
+    - zstandard >=0.24.0,<0.26.0
 
 test:
   imports:
