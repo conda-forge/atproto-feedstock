@@ -1,5 +1,5 @@
 {% set name = "atproto" %}
-{% set version = "0.0.70" %}
+{% set version = "0.0.71" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/atproto-{{ version }}.tar.gz
-  sha256: e56de53fe3e58dd5f6d839b485884fdcdb51576cc445a410293963bcb0242d97
+  sha256: 34b9c6951208807ee066b46dcd7d7476bbd48dc4a36f4a6c3a6f9fa48359166f
 
 build:
   entry_points:
